@@ -34,15 +34,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#"
+              <a class="nav-link active text-light" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">About</a>
+              <a class="nav-link text-light" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contact</a>
+              <a class="nav-link text-light" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,25 +54,16 @@
           <h3 class="fw-semibold">Hi! I'am</h3>
           <h1 class="fw-bold">Wildan</h1>
           <p>I am Software Engineer based in Indonesia</p>
-          <a
-            class="btn button"
-            href="image/Screenshot 2025-05-25 092703.svg"
-            download
-            >Resume</a
-          >
+          <a class="btn button" href="image/Screenshot 2025-05-25 092703.svg" download>Resume</a>
         </div>
         <div class="col-3">
           <img class="propil" src="image/propil.jpg" alt="Potret" />
         </div>
       </div>
-      <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-        <a
-          class="fw-semibold align-items-center text-decoration-none text-dark"
-          href="#about"
-          >More Info</a
-        >
-        <img id="arrow" src="image/arrow-down-sign-to-navigate.png" alt="" />
-      </div>
+      <a  href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+        <div class="fw-semibold align-items-center text-dark">More Info</div>
+        <img id="arrow" src="image/arrow-down-sign-to-navigate.png" alt="arrow icon">
+      </a>
     </section>
     <section id="about" class="about container">
       <p>
@@ -157,33 +148,33 @@
       </div>
     </section>
     <section id="contact" class="contact container">
-      <div class="row d-flex align-items-center gap-5">
-        <div class="col">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto neque enim quidem alias quam impedit eos consectetur, ullam quae amet quaerat deleniti consequatur provident facere cupiditate! Autem consectetur quis odio, quia delectus accusantium cupiditate voluptatem placeat odit, animi labore velit laborum quae quasi dolores sequi ad? Illum, maxime qui?</p>
+      <div class="d-flex align-items-center gap-5">
+        <div class="col-12 col-lg-6">
+          <p>Got a question, project idea, or just wanna vibe and talk tech or crypto? Don’t be shy — I’d love to connect! Whether it’s about coding, trading, or random geeky stuff, I’m all ears. Slide into my inbox or drop a DM anytime — let’s make something cool happen 🚀💻</p>
           <div class="row">
-            <div class="col">
-              <img src="image/instagram.png" alt="instagram icon">
-              <p>@wxndn__</p>
+            <div class='d-flex align-items-center'>
+              <img class="w-25" src="image/instagram.png" alt="instagram icon">
+              <p class="mb-0 ms-2">@wxndn__</p>
             </div>
-            <div class="col" >
-              <img src="image/twitter.png" alt="x icon">
-              <p>@kememuab__</p>
+            <div class='d-flex align-items-center'>
+              <img class="w-25" src="image/twitter.png" alt="x icon">
+              <p class="mb-0 ms-2">@kememuab__</p>
             </div>
-          </div>
+          </div>  
         </div>
-        <div class="col">
-          <form class="contact-form"> 
+        <div class="col-12 col-lg-5">
+          <form class="contact-form"  onsubmit="onFormSubmit(event)"> 
             <div class="mb-3">
               <label for="inp_email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="inp_email" aria-describedby="emailHelp"> 
+              <input type="email" class="form-control" id="inp_email" aria-describedby="emailHelp" required> 
             </div>
             <div class="mb-3">
               <label for="inp_subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="inp_subject">
+              <input type="text" class="form-control" id="inp_subject" required>
             </div>
             <div class="mb-3">
               <label for="inp_message" class="form-label">Message</label>
-              <input type="text" class="form-control" id="inp_message">
+              <input type="text" class="form-control" id="inp_message" required>
             </div>
             <div class="d-flex justify-content-center mt-5">
               <button type="submit" class="btn button">Submit</button> 
